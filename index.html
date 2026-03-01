@@ -897,19 +897,7 @@ function saveData() {
 }
 
 function getSampleData() {
-  const now = new Date();
-  const y = now.getFullYear();
-  const m = String(now.getMonth() + 1).padStart(2, '0');
-  return [
-    { id: 1, date: `${y}-${m}-01`, name: '給与', amount: 280000, type: 'income', category: 'その他', source: 'bank', shared: 'personal', mergedWith: null },
-    { id: 2, date: `${y}-${m}-05`, name: 'Amazonの注文', amount: 3980, type: 'expense', category: '日用品', source: 'card', shared: 'personal', mergedWith: 'amazon', amazonProduct: 'USB-Cケーブル 2m' },
-    { id: 3, date: `${y}-${m}-07`, name: 'スーパー', amount: 4320, type: 'expense', category: '食費', source: 'card', shared: 'shared', mergedWith: null },
-    { id: 4, date: `${y}-${m}-10`, name: 'Netflix', amount: 1490, type: 'expense', category: '趣味', source: 'card', shared: 'personal', mergedWith: null },
-    { id: 5, date: `${y}-${m}-12`, name: 'カード引き落とし', amount: 52000, type: 'expense', category: 'その他', source: 'bank', shared: 'personal', mergedWith: 'card', cardNote: 'カード明細と紐付け済み' },
-    { id: 6, date: `${y}-${m}-15`, name: '電車・Suica', amount: 1200, type: 'expense', category: '交通', source: 'cash', shared: 'shared', mergedWith: null },
-    { id: 7, date: `${y}-${m}-18`, name: 'Amazonの注文', amount: 6800, type: 'expense', category: '日用品', source: 'card', shared: 'personal', mergedWith: 'amazon', amazonProduct: 'BluetoothスピーカーJBL' },
-    { id: 8, date: `${y}-${m}-20`, name: '外食 ランチ', amount: 1850, type: 'expense', category: '外食', source: 'cash', shared: 'shared', mergedWith: null },
-  ];
+  return [];
 }
 
 // ===== MONTH =====
